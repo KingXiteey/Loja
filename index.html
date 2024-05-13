@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+   
+</head>
+<body>
+    <header>
+        <div class="container container-flex">
+            <h1>Battle Land</h1>
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Em destaque</a></li>
+                <li><a href="#">Promoções</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="sobre-a-loja">
+        <div class="container container-flex">
+            <img src="./images/LOJA.png" alt="imagem da loja">
+            <div>
+                <h2>Sobre a Rede Battle Land</h2>
+                <p>
+                    "Explore um mundo de infinitas possibilidades e batalhas épicas no universo de Battle Land! Junte-se a nós e embarque em uma jornada única, onde a estratégia e a habilidade são fundamentais. Comunidade vibrante, desafios emocionantes e aventuras sem fim esperam por você neste reino digital. Descubra seu destino, forje alianças e prove sua coragem em Battle Land - onde a verdadeira aventura começa!" 
+                </p>
+            </div>
+        </div>
+        <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img src="./images/carousel.3.png" class="d-block w-100">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./images/carousel.2.png" class="d-block w-100">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item" >
+                    <img src="./images/carousel.1.png"  class="d-block w-100">
+                </div>
+            </div>
+            <a href="https://discord.gg/3AcuVaYnK3"> <button type="button" class="btn btn-dangerbtn btn-primary">JOGAR AGORA</button></a>
+           
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>Em destaque</h2>
+            <ul class="container-flex lista-flores">
+                <li>
+                    <img src="./images/Screenshot_1.png" alt="">
+                    <h3>BETA</h3>
+                    <p>VIP - BETA Venda Temporária</p>
+                    <strong>R$ 70,00</strong>
+                    <button type="button" class="btn btn-danger btn-success">Adicione ao carrinho</button>
+                </li>
+            </li>
+        </li>
+        <li class=" item-central">
+            <img src="./images/Screenshot_2.png" alt="">
+            <h3>LIGHT</h3>
+            <p>VIP - LIGHT </p>
+            <strong>R$ 60,00</strong>
+            <button type="button" class="btn btn-dangerbtn btn-success">Adicione ao carrinho</button>
+        </li>
+        <li>
+            <img src="./images/Screenshot_4.png" alt="">
+            <h3>ULTIMATE</h3>
+            <p>VIP - ULTIMATE </p>
+            <strong>R$ 50,00</strong>
+            <button type="button" class="btn btn-dangerbtn btn-success">Adicione ao carrinho</button>
+        </li>
+        <li>
+            <img src="./images/Screenshot_5.png" alt="">
+            <h3>PREMIUM</h3>
+            <p>VIP - PREMIUM </p>
+            <strong>R$ 70,00</strong>
+            <button type="button" class="btn btn-dangerbtn btn-success">Adicione ao carrinho</button>
+        </li>
+        <li class=" item-central">
+            <img src="./images/Screenshot_6.png" alt="">
+            <h3>CASH</h3>
+            <p>1k CASH</p>
+            <strong>R$ 60,00</strong>
+            <button type="button" class="btn btn-dangerbtn btn-success">Adicione ao carrinho</button>
+        </li>
+        <li >
+            <img src="./images/Screenshot_7.png" alt="">
+            <h3>CASH</h3>
+            <p>5k CASH</p>
+            <strong>R$ 120,00</strong>
+            <button   type="button"class="btn btn-dangerbtn btn-success" >Adicione ao carrinho</button>
+        </li>
+        <li>
+           <img src="./images/Screenshot_8.png" alt="">
+           <h3>UNBAN</h3>
+           <p>Entrar Em discord para negociarmos!</p>
+           <strong>Valor inderteminado!</strong>
+           <button id="btn-checar-discord" type="button" class="btn btn-warning">Sobre Unban/Unmute</button>
+        </li>
+            </ul>
+        </div>
+        <div class="toast-container positions-fixed button-0 end-0 p-3">
+            <div data-bs-autohide="false"class="toast" id="unban-alert">
+                <header class="toast-header">
+                    <strong>
+                        Importante
+                    </strong>
+                </header>
+                <div class="toast-body">
+                    Para adquirir unban terá que comprar no discord!.
+                <div class="mt-2 pt-2 border-top">
+                    <button data-bs-dismiss="toast"class="btn btn-danger">Fechar</button>
+                </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Battle Land. Todos os direitos reservados.</p>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script>
+        $('.menu-hamburguer').click(function() {
+            $('nav').slideToggle();
+        });
+        const ativadorToast = document.getElementById('btn-checar-discord')
+        const mensagem = document.getElementById('unban-alert')
+        if(ativadorToast){
+            ativadorToast.addEventListener('click',function(){
+                const toast = new bootstrap.Toast (mensagem)
+                 toast.show()
+            })
+        }
+    </script>
+</body>
+</html>

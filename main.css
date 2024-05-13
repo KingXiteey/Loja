@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #3105aa;
+    padding-top: 16px;
+    color: #fff;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: #3a0db6;
+    padding: 16px 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#sobre-a-loja .container-flex{
+    display:flex;
+    align-items: flex-start;
+}
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 0;
+    margin-bottom: 16px;
+}
+#sobre-a-loja div{
+    flex: 1;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-flores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.lista-flores li {
+    list-style: none;
+    flex: 0 0 calc(25% - 20px);
+    margin-bottom: 24px;
+}
+
+.lista-flores img {
+    width: 100%;
+}
+
+.lista-flores li h3 {
+    margin: 16px 0;
+}
+
+.item-central {
+    flex: 0 0 100%;
+    margin: 0;
+}
+
+.lista-flores li button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #3105aa;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #3105aa;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+   
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    header > .container {
+        padding: 16px 0;
+    }
+
+    nav {
+        padding: 8px 0;
+    }
+
+    nav li {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .menu-hamburguer {
+        display: inline-block;
+    }
+
+    .lista-flores li {
+        flex: 0 0 calc(50% - 20px);
+    }
+   
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    #sobre-a-loja img {
+        max-width: 100%;
+    }
+
+    .lista-flores li {
+        flex: 0 0 calc(50% - 20px); 
+    }
+}
+/* Estilos responsivos para celulares */
+@media (max-width: 640px) {
+    .lista-flores li {
+        flex: 0 0 100%; /* uma coluna */
+    }
+}
+@media (min-width: 1024px) {
+    #sobre-a-loja {
+        display: flex;
+        align-items: center;
+    }
+
+    #sobre-a-loja img {
+        margin-right: 32px;
+    }
+
+    #sobre-a-loja div {
+        flex: 1;
+    }
+
+    .carousel-inner .carousel-item img {
+        max-width: 100%; /* Ajusta a largura da imagem para preencher o espaço */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
+
